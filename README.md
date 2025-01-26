@@ -24,7 +24,7 @@ curl -X POST http://localhost:3000/login -d '{"name": "xinxin", "pass": "666"}' 
 ```markdown
 新增
 
-curl -X POST http://localhost:3000/users -d '{"name": "xinxin", "pass": "777", "isActive": false}' -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsIm5hbWUiOiJ4aW54aW4iLCJpYXQiOjE3Mzc4OTM5NjgsImV4cCI6MTczNzg5NDU2OH0.ElBMRo5mRyuDU6GfzTPGrQfASZrkjrKISmo7KNFH-h4"
+curl -X POST http://localhost:3000/users -d '{"name": "xinxin", "pass": "777", "isActive": false}' -H "Content-Type: application/json" -H "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjIsIm5hbWUiOiJ4aW54aW4iLCJpYXQiOjE3Mzc4OTYwNDUsImV4cCI6MTczNzg5NjY0NX0.1Omrf-SkgnSY5QrwQPRcSBQh2hgO8Yfu4nQweosCAc8"
 ```
 
 ```markdown
@@ -36,5 +36,5 @@ curl http://localhost:3000/users/3
 ```markdown
 删除某个
 
-curl -x delete http://localhost:3000/users/3
+curl -X DELETE http://localhost:3000/users/12
 ```

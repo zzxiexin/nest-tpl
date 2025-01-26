@@ -15,7 +15,6 @@ export class AuthService {
     if (user?.pass !== pass) {
       throw new UnauthorizedException();
     }
-    const { pass: password, ...result } = user;
     // TODO: Generate a JWT and return it here
     // instead of the user object
     const payload = { sub: user.id, name: user.name };
