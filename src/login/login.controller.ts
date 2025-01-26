@@ -12,9 +12,9 @@ export class LoginController {
     return this.loginService.create(createLoginDto);
   }
 
-  @Get()
-  findAll() {
-    return this.loginService.findAll();
+  @Get(':name')
+  findAll(@Param('name') name: string) {
+    return this.loginService.findAll(name);
   }
 
   @Get(':id')

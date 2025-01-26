@@ -8,7 +8,8 @@ export class LoginService {
     return 'This action adds a new login';
   }
 
-  findAll() {
+  findAll(name) {
+    console.log('query name', name);
     return `This action returns all login`;
   }
 
