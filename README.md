@@ -14,3 +14,8 @@ curl http://localhost:3000/users/3
 删
 curl -x delete http://localhost:3000/users/3
 ```
+
+```
+登陆
+curl -X post http://localhost:3000/login -d '{"name": "xinxin", "pass": "666"}' -H "Content-Type: application/json"
+```
